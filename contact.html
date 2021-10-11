@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <link rel="stylesheet" href="accessconfig/css/accessconfig.min.css" type="text/css" media="screen"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+
+    <title>Contact - J'aime le chocolat</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#maincontent">Aller au contenu principal</a>
+    <div
+      id="accessconfig"
+      data-accessconfig-buttonname="Confort utilisateur"
+      data-accessconfig-params='{ "Prefix" : "a42-ac", "ContainerClass" : "","ModalCloseButton" : "","ModalTitle" : "","FormFieldset" : "","FormFieldsetLegend" : "","FormRadio" : ""}'
+    ></div>
+    <header role="banner">
+      <h1>J'<span id="title-heart">&#10084;</span> le chocolat!</h1>
+    </header>
+    <div class="topnav" id="myTopnav">
+      <nav class="navigation" role="navigation" aria-label="principale">
+        <ul id="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="legals.html">Mentions légales</a></li>
+          <li>
+            <a href="contact.html" class="active" aria-current="true"
+              >Contact</a
+            >
+          </li>
+          <li><a href="#">#E-shop</a></li>
+          <li><a href="#">#Plan du site</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="js-document" id="maincontent" role="main" tabindex="-1">
+      <div class="page-wrapper">
+        <div class="form-wrapper">
+          <h2>Nous contacter par message</h2>
+          <form action="#" method="post">
+            <div class="form-group">
+
+                <legend>Genre</legend>
+                <div>
+                  <input type="radio" id="blanc"  name="couleur" class="custom-control-input" checked=""/>
+                  <label class="custom-control-label" for="blanc">Femme</label>
+                </div>
+                <div>
+                  <input  type="radio"  id="noir" name="couleur" class="custom-control-input"/>
+                  <label class="custom-control-label" for="noir"> Homme</label>
+                </div>
+            </div>
+
+            <div>
+              <p>Nom</p>
+              <input type="text" class="required"  id="name"  name="user_name"/>
+            </div>
+            <div>
+              <p>Prénom</p>
+              <input  type="text"  id="firstname" name="user_firstname" />
+            </div>
+            <div>
+              <label for="birthdate" >Date de naissance</label>
+              <input type="date"  id="birthdate" class="required" name="user_birthdate" autocomplete="bday"/>
+            </div>
+            <div>
+              <label for="mail">e-mail</label>
+              <input type="email" id="mail" class="required" name="user_mail" required="required" autocomplete="email" />
+            </div>
+            <div>
+              <label for="phone">téléphone</label>
+              <input type="tel"  id="phone" class="required" name="user_phone" autocomplete="mobile"/>
+            </div>
+            <div>
+              <label for="msg">Message</label>
+              <textarea id="msg" class="required" name="user_message"></textarea>
+            </div>
+            <button type="submit">Valider</button>
+          </form>
+        <p>Les champs entourés en rouge sont obligatoires</p>
+        </div>
+       <div class="tel-wrapper">
+        <h2>Vous préférez nous contacter par téléphone? Pas de souci c'est ici.</h2>
+        <p>Du lundi au vendredi, de 10h à 18h</p>
+        <p>
+          Téléphone :
+          <a href="tel:+33600000000" aria-label="Appellez"> 06 00 00 00 00 </a>
+        </p> 
+      </div></div>
+    </main>
+
+    <footer role="contentinfo">
+      <p>Suivez-nous!</p>
+      <ul class="footer-content">
+        <li>
+          <a class="footer-content twitter" href="#" target="_blank">
+            <img src="images/Twitter.svg" alt="" /><span class="sr-only"
+              >Suivre sur Twitter (nouvelle fenêtre)</span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="footer-content github" href="#" target="_blank">
+            <img src="images/Facebook.svg" alt="" /><span class="sr-only"
+              >Suivre sur Github (nouvelle fenêtre)</span
+            ></a
+          >
+        </li>
+      </ul>
+      <p>© Chocolate Lover - 2021</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <!--Access Config-->
+    <script src="accessconfig/js/accessconfig.min.js"></script>
+  </body>
+</html>
